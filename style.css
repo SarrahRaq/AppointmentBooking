@@ -1,0 +1,80 @@
+/* style.css - pink theme */
+:root {
+    --pink-dark: #d63384;
+    --pink: #ff6fa5;
+    --pink-light: #ffd6e7;
+    --pink-bg: #fff0f6;
+}
+
+body {
+    background: var(--pink-bg);
+    color: #5a2a41;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+.navbar-pink {
+    background: linear-gradient(90deg, var(--pink-dark), var(--pink));
+}
+.navbar-pink .navbar-brand,
+.navbar-pink .nav-link { color: #fff; }
+.navbar-pink .nav-link:hover { color: var(--pink-light); }
+
+.footer-pink {
+    background: var(--pink-light);
+    color: var(--pink-dark);
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(214, 51, 132, 0.15);
+}
+.card-header-pink {
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    font-weight: 600;
+    border-radius: 16px 16px 0 0 !important;
+}
+
+.btn-pink {
+    background: var(--pink);
+    border-color: var(--pink);
+    color: #fff;
+}
+.btn-pink:hover {
+    background: var(--pink-dark);
+    border-color: var(--pink-dark);
+    color: #fff;
+}
+.btn-outline-pink {
+    border-color: var(--pink);
+    color: var(--pink-dark);
+}
+.btn-outline-pink:hover {
+    background: var(--pink);
+    color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 165, 0.25);
+}
+
+.table thead { background: var(--pink); color: #fff; }
+.table-pink > :not(caption) > * > * { background: #fff; }
+
+.hero {
+    background: linear-gradient(135deg, var(--pink-light), #fff);
+    border-radius: 20px;
+    padding: 60px 20px;
+}
+.hero h1 { color: var(--pink-dark); font-weight: 700; }
+
+.status-Pending   { background: #ffc107; color: #5a2a41; }
+.status-Confirmed { background: #d63384; color: #fff; }
+.status-Cancelled { background: #adb5bd; color: #fff; }
